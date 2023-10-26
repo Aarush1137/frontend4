@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 function StudentListRow(props)
 {
-    const {_id,name,email,rollno} = props.obj; //Object destruction
+    const {_id,name,email,rollno} = props.obj;
 
     const handleClick = () => {
         Axios.delete("https://crud-deployment-backend-4.onrender.com/students/delete-student/"+ _id)

@@ -20,7 +20,7 @@ function StudentList()
     },[])
 
     const ListItems = () => {
-        return arr.map((val,ind)=>{  //[{_id,name,email,rollno},{},{}]
+        return arr.map((val,ind)=>{ 
             return <StudentListRow key={ind} obj={val}  />
         })
     }

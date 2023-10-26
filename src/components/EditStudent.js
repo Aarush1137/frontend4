@@ -13,7 +13,7 @@ function EditStudent()
         Axios.get("https://crud-deployment-backend-4.onrender.com/students/update-student/" + id)
         .then((res)=>{
             if(res.status === 200){
-                const {name,email,rollno} = res.data; //name:Raj, email: .. rollno: ..
+                const {name,email,rollno} = res.data; 
                 setData({name,email,rollno})
             }
             else{
